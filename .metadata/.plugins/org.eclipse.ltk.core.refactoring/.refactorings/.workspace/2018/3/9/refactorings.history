@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ergodev_artifact&apos; to &apos;ergodev&apos;" description="Rename resource &apos;ergodev_artifact&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ergodev_artifact" name="ergodev" stamp="1519938721666" updateReferences="true"/>
+</session>
