@@ -778,3 +778,530 @@ java.lang.IllegalArgumentException: timeout value is negative
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2018-03-01 13:18:13.817
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2018-03-01 15:03:09.466 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-03-01 15:03:49.734
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vsnarayana'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-03-01 15:04:01.665
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-03-01 15:04:01.686
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.jaspersoft.studio 1 0 2018-03-01 15:04:04.402
+!MESSAGE Starting JaspersoftStudio bundle - Version: 6.5.1.final
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-03-01 15:11:07.493
+!MESSAGE No repository found at http://repo.maven.apache.org/maven2/archetype-catalog.xml.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-03-01 15:11:12.916
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://repo.maven.apache.org/maven2/archetype-catalog.xml.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2018-03-01 15:11:12.932
+!MESSAGE No repository found at http://repo.maven.apache.org/maven2/archetype-catalog.xml.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2018-03-01 15:11:16.493
+!MESSAGE HTTP Server 'Service Unavailable': http://jasperstudio.sourceforge.net/updates/compositeContent.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 503.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2018-03-01 15:11:16.493
+!MESSAGE HttpComponents connection error response code 503.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-03-01 15:11:18.019
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: HTTP Server 'Service Unavailable': http://jasperstudio.sourceforge.net/updates/compositeContent.xml
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:243)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:73)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:98)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor89.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 503.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2018-03-01 15:11:18.019
+!MESSAGE HTTP Server 'Service Unavailable': http://jasperstudio.sourceforge.net/updates/compositeContent.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 503.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2018-03-01 15:11:18.019
+!MESSAGE HttpComponents connection error response code 503.
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2018-03-01 15:12:19.715
+!MESSAGE Exception in update check thread
+!STACK 0
+java.lang.IllegalArgumentException: timeout value is negative
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:86)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-03-01 15:23:28.405
+!MESSAGE Connection to http://repo.maven.apache.org/maven2/archetype-catalog.xml/site.xml failed on Network is unreachable: connect. Retry attempt 0 started
+!STACK 0
+java.net.SocketException: Network is unreachable: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:674)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:487)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-03-01 15:23:29.015
+!MESSAGE Connection to http://repo.maven.apache.org/maven2/archetype-catalog.xml/p2.index failed on Network is unreachable: connect. Retry attempt 0 started
+!STACK 0
+java.net.SocketException: Network is unreachable: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-03-01 15:23:29.678
+!MESSAGE Connection to http://repo.maven.apache.org/maven2/archetype-catalog.xml/p2.index failed on Network is unreachable: connect. Retry attempt 0 started
+!STACK 0
+java.net.SocketException: Network is unreachable: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-03-01 15:23:30.313
+!MESSAGE Connection to http://repo.maven.apache.org/maven2/archetype-catalog.xml/p2.index failed on Network is unreachable: connect. Retry attempt 0 started
+!STACK 0
+java.net.SocketException: Network is unreachable: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2018-03-01 15:23:30.912
+!MESSAGE Connection to http://repo.maven.apache.org/maven2/archetype-catalog.xml/p2.index failed on Network is unreachable: connect. Retry attempt 0 started
+!STACK 0
+java.net.SocketException: Network is unreachable: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:177)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-03-01 15:25:20.170
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-03-01 15:25:20.170
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:25:20.170
+!MESSAGE Software being installed: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:25:20.170
+!MESSAGE Missing requirement: JGit Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm 4.10.0.201712302008-r) requires 'package org.eclipse.jetty.continuation [9.4.5,10.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-03-01 15:25:20.170
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:25:20.170
+!MESSAGE From: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:25:20.170
+!MESSAGE To: org.eclipse.jgit.pgm [4.10.0.201712302008-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-03-01 15:25:20.221
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-03-01 15:25:20.221
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:25:20.221
+!MESSAGE Software being installed: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:25:20.221
+!MESSAGE Missing requirement: JGit Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm 4.10.0.201712302008-r) requires 'package org.eclipse.jetty.continuation [9.4.5,10.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-03-01 15:25:20.221
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:25:20.221
+!MESSAGE From: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:25:20.221
+!MESSAGE To: org.eclipse.jgit.pgm [4.10.0.201712302008-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-03-01 15:28:20.096
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-03-01 15:28:20.096
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:28:20.096
+!MESSAGE Software being installed: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:28:20.096
+!MESSAGE Missing requirement: JGit Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm 4.10.0.201712302008-r) requires 'package org.eclipse.jetty.continuation [9.4.5,10.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-03-01 15:28:20.096
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:28:20.096
+!MESSAGE From: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:28:20.096
+!MESSAGE To: org.eclipse.jgit.pgm [4.10.0.201712302008-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-03-01 15:28:20.100
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-03-01 15:28:20.100
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:28:20.100
+!MESSAGE Software being installed: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:28:20.100
+!MESSAGE Missing requirement: JGit Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm 4.10.0.201712302008-r) requires 'package org.eclipse.jetty.continuation [9.4.5,10.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-03-01 15:28:20.100
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:28:20.100
+!MESSAGE From: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:28:20.100
+!MESSAGE To: org.eclipse.jgit.pgm [4.10.0.201712302008-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-03-01 15:44:56.024
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-03-01 15:44:56.024
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:44:56.024
+!MESSAGE Software being installed: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:44:56.024
+!MESSAGE Missing requirement: JGit Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm 4.10.0.201712302008-r) requires 'package org.eclipse.jetty.continuation [9.4.5,10.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-03-01 15:44:56.024
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:44:56.024
+!MESSAGE From: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:44:56.024
+!MESSAGE To: org.eclipse.jgit.pgm [4.10.0.201712302008-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-03-01 15:44:56.042
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-03-01 15:44:56.042
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:44:56.042
+!MESSAGE Software being installed: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:44:56.042
+!MESSAGE Missing requirement: JGit Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm 4.10.0.201712302008-r) requires 'package org.eclipse.jetty.continuation [9.4.5,10.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-03-01 15:44:56.042
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:44:56.042
+!MESSAGE From: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 15:44:56.042
+!MESSAGE To: org.eclipse.jgit.pgm [4.10.0.201712302008-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-03-01 16:03:19.434
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-03-01 16:03:19.434
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 16:03:19.434
+!MESSAGE Software being installed: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 16:03:19.434
+!MESSAGE Missing requirement: JGit Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm 4.10.0.201712302008-r) requires 'package org.eclipse.jetty.continuation [9.4.5,10.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-03-01 16:03:19.434
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 16:03:19.434
+!MESSAGE From: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 16:03:19.434
+!MESSAGE To: org.eclipse.jgit.pgm [4.10.0.201712302008-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-03-01 16:03:19.449
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-03-01 16:03:19.449
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 16:03:19.449
+!MESSAGE Software being installed: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 16:03:19.449
+!MESSAGE Missing requirement: JGit Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm 4.10.0.201712302008-r) requires 'package org.eclipse.jetty.continuation [9.4.5,10.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-03-01 16:03:19.449
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 16:03:19.449
+!MESSAGE From: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 16:03:19.449
+!MESSAGE To: org.eclipse.jgit.pgm [4.10.0.201712302008-r]
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-03-01 16:03:32.383
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://repo.maven.apache.org/maven2/archetype-catalog.xml.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:395)
+	at sun.reflect.GeneratedMethodAccessor98.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:340)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:239)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2018-03-01 16:03:32.383
+!MESSAGE No repository found at http://repo.maven.apache.org/maven2/archetype-catalog.xml.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2018-03-01 16:03:33.613
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: HTTP Server 'Service Unavailable': http://jasperstudio.sourceforge.net/updates/compositeContent.xml
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCache(CacheManager.java:243)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.getLocalFile(CompositeMetadataRepositoryFactory.java:73)
+	at org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepositoryFactory.load(CompositeMetadataRepositoryFactory.java:98)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:57)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:768)
+	at sun.reflect.GeneratedMethodAccessor89.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:396)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:199)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:463)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:96)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:92)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:117)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:102)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$2.runModal(PreloadingRepositoryHandler.java:83)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:177)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 503.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	... 1 more
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2018-03-01 16:03:33.613
+!MESSAGE HTTP Server 'Service Unavailable': http://jasperstudio.sourceforge.net/updates/compositeContent.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 503.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.ecf.identity 4 0 2018-03-01 16:03:33.613
+!MESSAGE HttpComponents connection error response code 503.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-03-01 17:17:43.614
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-03-01 17:17:43.614
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.614
+!MESSAGE Software being installed: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.614
+!MESSAGE Missing requirement: JGit Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm 4.10.0.201712302008-r) requires 'package org.eclipse.jetty.continuation [9.4.5,10.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-03-01 17:17:43.614
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.614
+!MESSAGE From: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.614
+!MESSAGE To: org.eclipse.jgit.pgm [4.10.0.201712302008-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-03-01 17:17:43.661
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-03-01 17:17:43.661
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.661
+!MESSAGE Software being installed: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.661
+!MESSAGE Missing requirement: JGit Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm 4.10.0.201712302008-r) requires 'package org.eclipse.jetty.continuation [9.4.5,10.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-03-01 17:17:43.661
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.661
+!MESSAGE From: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.661
+!MESSAGE To: org.eclipse.jgit.pgm [4.10.0.201712302008-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-03-01 17:17:43.770
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-03-01 17:17:43.770
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.770
+!MESSAGE Software being installed: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.770
+!MESSAGE Missing requirement: JGit Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm 4.10.0.201712302008-r) requires 'package org.eclipse.jetty.continuation [9.4.5,10.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-03-01 17:17:43.770
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.770
+!MESSAGE From: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.770
+!MESSAGE To: org.eclipse.jgit.pgm [4.10.0.201712302008-r]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10053 2018-03-01 17:17:43.770
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10053 2018-03-01 17:17:43.770
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.770
+!MESSAGE Software being installed: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.770
+!MESSAGE Missing requirement: JGit Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm 4.10.0.201712302008-r) requires 'package org.eclipse.jetty.continuation [9.4.5,10.0.0)' but it could not be found
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2018-03-01 17:17:43.770
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.770
+!MESSAGE From: Java implementation of Git - Command Line Interface 4.10.0.201712302008-r (org.eclipse.jgit.pgm.feature.group 4.10.0.201712302008-r)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2018-03-01 17:17:43.770
+!MESSAGE To: org.eclipse.jgit.pgm [4.10.0.201712302008-r]
+!SESSION 2018-03-01 18:18:20.134 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/D:/projects/workbench/scapp/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-03-01 18:19:03.687
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\vsnarayana'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-03-01 18:19:15.541
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-03-01 18:19:15.553
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.jaspersoft.studio 1 0 2018-03-01 18:19:17.785
+!MESSAGE Starting JaspersoftStudio bundle - Version: 6.5.1.final
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2018-03-01 18:44:18.818
+!MESSAGE No repository found at http://repo.maven.apache.org/maven2/archetype-catalog.xml.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2018-03-01 18:44:26.894
+!MESSAGE HTTP Server 'Service Unavailable': http://jasperstudio.sourceforge.net/updates/compositeContent.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 503.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2018-03-01 18:44:26.894
+!MESSAGE HttpComponents connection error response code 503.
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2018-03-01 18:45:27.134
+!MESSAGE Exception in update check thread
+!STACK 0
+java.lang.IllegalArgumentException: timeout value is negative
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:86)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-03-01 19:24:54.794
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-03-01 19:24:54.840
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-03-01 19:24:55.966
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-03-01 19:24:55.966
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
